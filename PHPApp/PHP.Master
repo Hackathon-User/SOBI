@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PHP.master.cs" Inherits="PHPApp.PHP" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Pre-Hospitalization Process</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    Sudipta Samanta <sudipta.samanta.12.5@gmail.com>
+	
+11:11 AM (0 minutes ago)
+	
+to me
+<form id="form1" runat="server">
+        <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; padding: 1px; background-color: lightslategray; vertical-align: top">
+            <div style="position: relative; width: 100%; height: 100px; background: linear-gradient(to bottom right, #fffbef, #91bac9)">
+                <asp:Table ID="TableHeader" runat="server" Width="100%">
+                    <asp:TableRow>
+                        <asp:TableCell Width="20%" style="padding-left: 10px" HorizontalAlign="Left" RowSpan="2">
+                            <asp:Image ID="ImageLogo" runat="server" ImageUrl="~/Images/PHPLogo.png" Width="20%" />
+                        </asp:TableCell>
+                        <asp:TableCell Width="60%" HorizontalAlign="Center" RowSpan="2">
+                            <asp:Label ID="LabelHeader" runat="server" Text="Pre-Hospitalization Process" Font-Size="48px"></asp:Label>
+                        </asp:TableCell>
+                        <asp:TableCell Width="20%" style="padding-right: 10px" HorizontalAlign="Right">
+                            <asp:Label ID="LabelWelcome" runat="server" Text="Welcome: "></asp:Label>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow>
+                        <asp:TableCell HorizontalAlign="Right">
+                            <asp:LinkButton ID="LinkSignIn" runat="server">Sign In</asp:LinkButton>
+                            <asp:LinkButton ID="LinkSignOut" runat="server">Sign Out</asp:LinkButton>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+            </div>
+            <div style="position: relative; width: 100%; background-color: #dbe7f9">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div style="position: relative; width: 100%; height: 50px; background-color: #333; text-align: center; vertical-align:bottom; padding-top: 15px;">
+                <asp:Label ID="LabelFooter" runat="server" Text="Copyright © PHP" ForeColor="Wheat"></asp:Label>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
