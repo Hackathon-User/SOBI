@@ -33,9 +33,15 @@
         <li><a href="CheckStatus.aspx">Check Status</a></li>
         <li><a href="ContactHelpdesk.aspx">Contact Helpdesk</a></li>
     </ul>
-    <div style="padding: 10px; width:100%; text-align: left">
-        <div style="width: 75%">
-
-        </div>
+    <div>
+        <asp:Label ID="Label1" runat="server" Text="This is the sample Home page of the Hackathon app"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label2" runat="server" Text="This page needs to be edited"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label3" runat="server" Text="Testing the layout"></asp:Label>
     </div>
 </asp:Content>
