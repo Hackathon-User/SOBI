@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHPApp", "PHPApp\PHPApp.csproj", "{021CDC97-2279-4144-8E9D-898CE5FEB9ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHPAppTest", "PHPAppTest\PHPAppTest.csproj", "{DC1F26AB-3227-4142-9BE7-8FE72119018F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{021CDC97-2279-4144-8E9D-898CE5FEB9ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{021CDC97-2279-4144-8E9D-898CE5FEB9ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{021CDC97-2279-4144-8E9D-898CE5FEB9ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC1F26AB-3227-4142-9BE7-8FE72119018F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC1F26AB-3227-4142-9BE7-8FE72119018F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC1F26AB-3227-4142-9BE7-8FE72119018F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC1F26AB-3227-4142-9BE7-8FE72119018F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
