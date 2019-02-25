@@ -58,6 +58,15 @@ namespace PHPApp {
         protected global::System.Web.UI.WebControls.Label LabelHeader;
         
         /// <summary>
+        /// LabelSubHeader control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelSubHeader;
+        
+        /// <summary>
         /// LabelWelcome control.
         /// </summary>
         /// <remarks>
@@ -65,15 +74,6 @@ namespace PHPApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelWelcome;
-        
-        /// <summary>
-        /// LinkSignIn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkSignIn;
         
         /// <summary>
         /// LinkSignOut control.

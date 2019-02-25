@@ -8,23 +8,29 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #333;
+            background-color: #00b503;
+            color: black
         }
+
         li {
             float: left;
         }
+
             li a {
                 display: block;
-                color: white;
+                color: black;
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
             }
+
                 li a:hover:not(.active) {
-                    background-color: #111;
+                    background-color: #7fff81;
                 }
+
         .active {
-            background-color: #4CAF50;
+            background-color: #007201;
+            color: white
         }
     </style>
     <ul>
@@ -33,4 +39,30 @@
         <li><a href="CheckStatus.aspx">Check Status</a></li>
         <li><a class="active" href="ContactHelpdesk.aspx">Contact Helpdesk</a></li>
     </ul>
+       <div style="width: 100%">
+            <asp:Table ID="LayoutTable" runat="server" Width="100%">
+                <asp:TableRow>
+                    <asp:TableCell Width="25%" HorizontalAlign="Center">
+                        <div style="background-color: lightcoral; height: 200px; border-radius: 10px; width: 1000px">
+                            <table>
+                                <tr>
+                                    <td style="text-align: center">
+                                        <a style="font-size: 20px; font-family: Calibri">Contact: </a>
+                                        <hr />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center">
+                                        Contact Number: 9876545321
+                                       <br />Email ID: careplus@gmail.com
+                                      <br />Website:www.careplusforyou.co.in
+                                    </td>
+                                </tr>
+                               
+                            </table>
+                        </div>
+                    </asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+           </div>
 </asp:Content>

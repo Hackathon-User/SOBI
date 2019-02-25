@@ -9,11 +9,6 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    Sudipta Samanta <sudipta.samanta.12.5@gmail.com>
-	
-11:11 AM (0 minutes ago)
-	
-to me
 <form id="form1" runat="server">
         <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; padding: 1px; background-color: lightslategray; vertical-align: top">
             <div style="position: relative; width: 100%; height: 100px; background: linear-gradient(to bottom right, #fffbef, #91bac9)">
@@ -23,15 +18,17 @@ to me
                             <asp:Image ID="ImageLogo" runat="server" ImageUrl="~/Images/PHPLogo.png" Width="20%" />
                         </asp:TableCell>
                         <asp:TableCell Width="60%" HorizontalAlign="Center" RowSpan="2">
-                            <asp:Label ID="LabelHeader" runat="server" Text="Pre-Hospitalization Process" Font-Size="48px"></asp:Label>
+                            <asp:Label ID="LabelHeader" runat="server" Text="Care-Plus Hospital" Font-Size="48px"></asp:Label>
+                            <br />
+                            <asp:Label ID="LabelSubHeader" runat="server" Text="We care for you" Font-Size="18px" ForeColor = "GhostWhite"></asp:Label>
                         </asp:TableCell>
                         <asp:TableCell Width="20%" style="padding-right: 10px" HorizontalAlign="Right">
-                            <asp:Label ID="LabelWelcome" runat="server" Text="Welcome: "></asp:Label>
+                            <asp:Label ID="LabelWelcome" runat="server" Text="Welcome: Deepak"></asp:Label>
                         </asp:TableCell>
                     </asp:TableRow>
                     <asp:TableRow>
                         <asp:TableCell HorizontalAlign="Right">
-                            <asp:LinkButton ID="LinkSignIn" runat="server">Sign In</asp:LinkButton>
+                            <%--<asp:LinkButton ID="LinkSignIn" runat="server">Sign In</asp:LinkButton>--%>
                             <asp:LinkButton ID="LinkSignOut" runat="server">Sign Out</asp:LinkButton>
                         </asp:TableCell>
                     </asp:TableRow>
