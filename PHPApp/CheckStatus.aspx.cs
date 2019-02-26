@@ -24,39 +24,44 @@ namespace PHPApp
                 ArrayList br = new ArrayList();
                 br = (ArrayList)this.Session["list1"];
                 DataTable dt = new DataTable();
-                /*Load after deleting*/
-                if (FixTable.Rows.Count != 0 && !string.IsNullOrEmpty(Session["del"] as string))
-                {
-                    if(Session["del"].ToString()=="1")
-                    {
+                ///*Load after deleting*/
+                //if (FixTable.Rows.Count != 0 && !string.IsNullOrEmpty(Session["del"] as string))
+                //{
+                //    if(Session["del"].ToString()=="1")
+                //    {
 
-                    GridView1.DataSource = FixTable;
-                    GridView1.DataBind();
-                    }
-                }
+                //    GridView1.DataSource = FixTable;
+                //    GridView1.DataBind();
+                //    }
+                //}
               
                 /*Load after adding new record*/
-                if (FixTable.Rows.Count != 0 && !string.IsNullOrEmpty(Session["del"] as string))
+                //if (FixTable.Rows.Count != 0 && !string.IsNullOrEmpty(Session["del"] as string))
+              if (FixTable.Rows.Count != 0 )
                 {
-                    if (Session["del"].ToString() != "1")
-                    {
+                    //if (Session["del"].ToString() != "1")
+                    //{
                         DataTable dtCurrentTable = FixTable;
                         DataRow dr1 = dtCurrentTable.NewRow();
-                        dr1["PatientName"] = br[0].ToString();
-                        dr1["Age"] = (DateTime.Now.Year - Convert.ToDateTime(br[2]).Year);
-                        dr1["Gender"] = br[4].ToString().Substring(0, 1);
-                        dr1["SuggestedBy"] = br[5].ToString();
-                        dr1["Status"] = "Booked";
-                        dr1["Contact"] = Convert.ToInt64(br[8]);
-                        dr1["Email"] = br[6].ToString();
-                        dtCurrentTable.Rows.Add(dr1);
-                        GridView1.DataSource = dtCurrentTable;
-                        GridView1.DataBind();
-                    }
+                        if (br != null)
+                        {
+                            dr1["PatientName"] = br[0].ToString();
+                            dr1["Age"] = (DateTime.Now.Year - Convert.ToDateTime(br[2]).Year);
+                            dr1["Gender"] = br[4].ToString().Substring(0, 1);
+                            dr1["SuggestedBy"] = br[5].ToString();
+                            dr1["Status"] = "Booked";
+                            dr1["Contact"] = Convert.ToInt64(br[8]);
+                            dr1["Email"] = br[6].ToString();
+                            dtCurrentTable.Rows.Add(dr1);
+                            GridView1.DataSource = dtCurrentTable;
+                            GridView1.DataBind();
+                        }
+                    //}
 
                 }
                 /*First time load*/
-                if (FixTable.Rows.Count == 0 &&  string.IsNullOrEmpty(Session["del"] as string))
+                //if (FixTable.Rows.Count == 0 &&  string.IsNullOrEmpty(Session["del"] as string))
+                    else
                 {
                     dt.Columns.AddRange(new DataColumn[7] { new DataColumn("PatientName", typeof(string)),    
                         new DataColumn("Age", typeof(int)),    
@@ -90,12 +95,12 @@ namespace PHPApp
                     GridView1.DataBind();
                 }
                 /*loading without del and after traversing other tabs*/
-                if (FixTable.Rows.Count != 0 && string.IsNullOrEmpty(Session["del"] as string))
-                {
+                //if (FixTable.Rows.Count != 0 && string.IsNullOrEmpty(Session["del"] as string))
+                //{
 
-                    GridView1.DataSource = FixTable;
-                    GridView1.DataBind();
-                }
+                //    GridView1.DataSource = FixTable;
+                //    GridView1.DataBind();
+                //}
             }  
 
         }
