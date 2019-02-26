@@ -57,7 +57,7 @@
         <li><a class="active" href="Home.aspx">Home</a></li>
         <li><a href="NewRequest.aspx">New Request</a></li>
         <li><a href="CheckStatus.aspx">Check Status</a></li>
-        <li><a href="ContactHelpdesk.aspx">Contact Helpdesk</a></li>
+        <li><a href="ContactHelpdesk.aspx">Contact Us</a></li>
     </ul>
     <div style="padding: 10px; width: 100%; text-align: left">
         <div style="width: 100%">
