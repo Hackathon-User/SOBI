@@ -37,7 +37,7 @@
         <li><a href="Home.aspx">Home</a></li>
         <li><a href="NewRequest.aspx">New Request</a></li>
         <li><a href="CheckStatus.aspx">Check Status</a></li>
-        <li><a class="active" href="ContactHelpdesk.aspx">Contact Helpdesk</a></li>
+        <li><a class="active" href="ContactHelpdesk.aspx">Contact Us </a></li>
     </ul>
        <div style="width: 100%">
             <asp:Table ID="LayoutTable" runat="server" Width="100%">
