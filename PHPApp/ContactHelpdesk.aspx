@@ -16,7 +16,7 @@
             float: left;
         }
 
-            li a {
+            li a { 
                 display: block;
                 color: black;
                 text-align: center;
